@@ -1,0 +1,30 @@
+/*navegador del inicio*/
+.navbar-light .navbar-brand{
+    color: rgb(255 255 255);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+	color: rgb(86 88 91);
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: rgb(133 132 132);
+}
+
+/*imagenes del equipo con hover*/
+.equipoCards:hover{
+	background-color: #B5B5B5;
+	transform: scale(1, 1);
+}
+
+/*formuario con focus*/
+.mb-3 .form-control:focus{
+	color:#fff;
+	background-color:#000;
+}
+
+/*formuario con active*/
+.mb-3 .formluarioInput:active{
+	background-color: red;
+	color: black;
+}
