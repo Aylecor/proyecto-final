@@ -1,30 +1,246 @@
-/*navegador del inicio*/
-.navbar-light .navbar-brand{
-    color: rgb(255 255 255);
+/*tipografía*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&family=Roboto:wght@900&display=swap");
+
+/*reseteo*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
-	color: rgb(86 88 91);
+/*menú de navegación*/
+.navbar-light .navbar-brand {
+  color: rgb(255 255 255);
 }
 
-.navbar-light .navbar-nav .nav-link{
-	color: rgb(133 132 132);
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(86 88 91);
 }
 
-/*imagenes del equipo con hover*/
-.equipoCards:hover{
-	background-color: #B5B5B5;
-	transform: scale(1, 1);
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(133 132 132);
 }
 
-/*formuario con focus*/
-.mb-3 .form-control:focus{
-	color:#fff;
-	background-color:#000;
+/*grids areas*/
+.areas {
+  font-family: "Roboto Slab", "serif";
+  display: grid;
+  grid-template-areas:
+    "uno uno"
+    "dos dos"
+    "tres tres"
+    "cuatro cuatro"
+    "cinco cinco";
+  min-height: 20vh;
+  grid-gap: 1rem;
 }
 
-/*formuario con active*/
-.mb-3 .formluarioInput:active{
-	background-color: red;
-	color: black;
+.areas .borderRadio {
+  border-radius: 1.5rem;
+  min-height: 3rem;
+  text-align: center;
+}
+
+/*animación en area uno*/
+@keyframes anima {
+  0% {
+    background-position: 7% 0%;
+  }
+  50% {
+    background-position: 97% 100%;
+  }
+  100% {
+    background-position: 7% 0%;
+  }
+}
+
+/*gradiente en area uno*/
+.areaUno {
+  grid-area: uno;
+  animation: anima 45s linear infinite;
+  background: linear-gradient(
+    114.34deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.48) 26%,
+    rgba(0, 0, 0, 0.43) 34%,
+    rgba(0, 0, 0, 0.38) 41%,
+    rgba(0, 0, 0, 0.31) 52%,
+    rgba(0, 0, 0, 0.25) 62%,
+    rgba(0, 0, 0, 0.21) 68%,
+    rgba(0, 0, 0, 0.14) 79%,
+    rgba(0, 0, 0, 0.09) 87%,
+    rgba(0, 0, 0, 0.05) 93%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-size: 1000%;
+}
+
+.areaDos {
+  grid-area: dos;
+}
+
+.areaTres {
+  grid-area: tres;
+}
+
+.areaCuatro {
+  grid-area: cuatro;
+}
+
+.areaCinco {
+  grid-area: cinco;
+}
+
+.areaUno,
+.areaDos,
+.areaTres,
+.areaCuatro,
+.areaCinco {
+  background-color: #efefef;
+  margin: 1rem;
+  padding: 2%;
+}
+
+/*noticias con cards en el inicio*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16 px rgb(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+}
+
+.container .card .title {
+  font-weight: 600;
+}
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #b5b5b5;
+}
+
+/*imagenes y vídeo del estadio*/
+.imagen .img-estadio {
+  width: 600px;
+}
+
+.videoEstadio {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin-bottom: 2%;
+}
+
+/*imagenes del equipo*/
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+}
+
+.imagen {
+  padding: 5px 5px 35px 5px;
+  margin: 1rem;
+}
+
+.imagen .img {
+  width: 200px;
+}
+
+/*imagen con transformación en hover*/
+.imagen:hover {
+  background-color: #b5b5b5;
+  transform: scale(1, 1);
+}
+
+/*formulario*/
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario .formluarioInput {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*formulario con focus*/
+.formulario .formluarioInput:focus {
+  color: #fff;
+  background-color: #000;
+}
+
+/*mapa del contacto*/
+.mapaContacto {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+/*inicio de footer*/
+#footer {
+  font-family: "Roboto", "sans-serif";
+  color: #b5b5b5;
+  margin-bottom: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+}
+
+.footerTitulo {
+  padding-top: 3%;
+}
+
+.redesSociales {
+  list-style: none;
+  text-align: center;
+  margin: 3%;
+}
+
+#footer .redesSociales li {
+  margin: 3%;
+}
+
+#footer .redesSociales li a {
+  text-decoration: none;
+  color: #b5b5b5;
+}
+
+.titulo {
+  text-align: center;
 }

@@ -1,129 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title>Real Madrid</title>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=devide-width, initial-scale=1">
-    <!--Bootstrap CSS-->  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Bootstrap Icons-->  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1" />
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  </head>
 
-<body>
+  <body>
     <!--menú de navegación-->
     <div class="container-fluid bg-dark">
-        <div class="container-xl">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/logo.png" alt="Logo del Real Madrid" width="30" height="24">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    <a class="nav-link" href="./routes/historia.html">Historia</a>
-                    <a class="nav-link" href="./routes/esatdio.html">Estadio Bernabéu</a>
-                    <a class="nav-link" href="./routes/equipo.html">Equipo de Fútbol</a>
-                    <a class="nav-link" href="./routes/contacto.html">Contacto</a>
-                  </div>
-                </div>
+      <div class="container-xl">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/logo.png"
+                alt="Logo del Real Madrid"
+                width="30"
+                height="24"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+                <a class="nav-link" href="./routes/historia.html">Historia</a>
+                <a class="nav-link" href="./routes/estadio.html"
+                  >Estadio Bernabéu</a
+                >
+                <a class="nav-link" href="./routes/equipo.html"
+                  >Equipo de Fútbol</a
+                >
+                <a class="nav-link" href="./routes/contacto.html">Contacto</a>
               </div>
-            </nav>
-        </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
-    
+
     <!--carrusel en el inicio-->
     <div class="container-fluid p-0">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <div class="carousel-inner">  
-            <div class="carousel-item active">
-                <img src="assets/inicioCarruselUno.jpg" class="d-block w-100"  alt="Logo">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/inicioCarruselUno.jpg"
+              class="d-block w-100"
+              alt="Logo"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/inicioCarruselDos.jpg"
+              style="width: 120px"
+              class="d-block w-100"
+              alt="Estadio"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/inicioCarruselTres.jpg"
+              class="d-block w-100"
+              alt="Campeonato"
+            />
+          </div>
         </div>
-        <div class="carousel-item">
-            <img src="assets/inicioCarruselDos.jpg" style="width: 120px;" class="d-block w-100" alt="Estadio">
-        </div>
-        <div class="carousel-item">
-            <img src="assets/inicioCarruselTres.jpg" class="d-block w-100" alt="Campeonato">
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-         </div>
     </div>
 
     <!--título de inicio-->
-    <div class="card">
-        <div class="card-body">
-            Bienvenido al mundo del Real Madrid
+    <div class="areas">
+      <div class="areaUno borderRadio">Bienvenido al mundo del Real Madrid</div>
+    </div>
+
+    <!--nueve noticias en el inicio-->
+    <div class="container">
+      <div class="card">
+        <img src="./assets/noticiaUno.jpg" alt="Noticia uno" />
+        <div class="title">Benzema cumple 34 años</div>
+        <p>
+          "El francés es el cuarto máximo goleador histórico del Real Madrid con
+          297 tantos."
+        </p>
+        <a
+          href="https://www.realmadrid.com/noticias/2021/12/19/benzema-cumple-34-anos"
+          target="_blanck>"
+          >Leer más...</a
+        >
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaDos.jpg" alt="Noticia dos" />
+        <div class="title">Ancelotti en rueda de prensa</div>
+        <p>
+          "Ancelotti: "Lo estamos haciendo bien y llegamos al derbi con mucha
+          confianza."
+        </p>
+        <a
+          href="https://www.realmadrid.com/aficion/videos/2021/12/ancelotti-lo-estamos-haciendo-bien-y-llegamos-al-derbi-con-mucha-confianza"
+          target="_blanck>"
+          >Leer más...</a
+        >
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaTres.jpg" alt="Noticia tres" />
+        <div class="title">Convocatoria del Real Madrid contra el Atlético</div>
+        <p>
+          "Los de Ancelotti afrontan el derbi correspondiente a la jornada 17 de
+          Liga."
+        </p>
+        <a
+          href="https://www.realmadrid.com/noticias/2021/12/11/convocatoria-del-real-madrid-contra-el-atletico"
+          target="_blanck>"
+          >Leer más...</a
+        >
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaCuatro.jpg" alt="Noticia cuatro" />
+        <div class="title">
+          Toda la actualidad del Santiago Bernabéu del siglo XXI
         </div>
+        <p>"Sigue aquí la transformación del estadio madridista."</p>
+        <a
+          href="https://www.realmadrid.com/noticias/2020/06/11/asi-van-las-obras-del-estadio-santiago-bernabeu-"
+          target="_blanck>"
+          >Leer más...</a
+        >
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaCinco.jpg" alt="Noticia cinco" />
+        <div class="title">
+          Los vídeos conmemorativos de las 13 Copas de Europa
+        </div>
+        <p>
+          "Entre el 11 de mayo y el 13 de junio, el Real Madrid celebra los
+          aniversarios de sus 13 títulos en la máxima competición continental."
+        </p>
+        <a
+          href="https://www.realmadrid.com/noticias/2020/05/25/asi-se-forjo-la-leyenda-del-rey-de-europa"
+          target="_blanck>"
+          >Leer más...</a
+        >
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaSeis.jpg" alt="Noticia seis" />
+        <div class="title">
+          El Real Madrid financia un novedoso invernadero subterráneo
+        </div>
+        <p>
+          "Es para guardar el césped del Santiago Bernabéu a un tipo fijo del
+          1,53%."
+        </p>
+        <a
+          href="https://www.realmadrid.com/noticias/2021/12/08/el-real-madrid-financia-un-novedoso-invernadero-subterraneo-para-guardar-el-cesped-del-santiago-bernabeu-a-un-tipo-fijo-del-153"
+          target="_blanck>"
+          >Leer más...</a
+        >
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaSiete.jpg" alt="Noticia siete" />
+        <div class="title">Conocemos la historia del Real Madrid</div>
+        <p>"Recorremos un largo período del pasado hasta en la actualidad."</p>
+        <a href="/routes/historia.html" target="_blanck>">Leer más...</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaOcho.jpg" alt="Noticia ocho" />
+        <div class="title">Nos adentramos al inmponente Estadio Bernabéu</div>
+        <p>"Descubrimos cada parte del estadio con un breve recorrido."</p>
+        <a href="/routes/estadio.html" target="_blanck>">Leer más...</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/noticiaNueve.jpg" alt="Noticia nueve" />
+        <div class="title">Descubirmos a la plantilla madrilista</div>
+        <p>"Conocemos a acda jugador y parte del cuerpo técnico."</p>
+        <a href="/routes/equipo.html" target="_blanck>">Leer más...</a>
+      </div>
     </div>
-
-    <!-- contenedor con tres noticias en el inicio -->
-    <div class="container p-2">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets/noticiaTres.jpg" class="card-img-top" alt="Noticia tres">
-                        <div class="card-body">
-                            <p class="card-text">"El Real Madrid conocerá mañana a su rival en los octavos de la Champions"</p>
-                        </div>   
-                    </div> 
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets/noticiaUno.jpg" class="card-img-top" alt="Noticia uno">
-                        <div class="card-body">
-                            <p class="card-text">Ancelotti:"Lo estamos haciendo bien y llegamos al derbi con mucha confianza"</p>
-                        </div>   
-                    </div> 
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets/noticiaDos.jpg" class="card-img-top" alt="Noticia dos">
-                        <div class="card-body">
-                           <p class="card-text">"Convocatoria del Real Madrid contra el Atlético"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-  
 
     <!--inicio de footer-->
-    <nav class="navbar navbar-light bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="https://www.instagram.com/realmadrid/?hl=es-la" target="_blanck">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a class="navbar-brand" href="https://www.facebook.com/RealMadrid/" target="_blanck">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a class="navbar-brand" href="https://twitter.com/realmadrid" target="_blanck">
-                <i class="bi bi-twitter"></i>
-            </a>
+    <div id="footer">
+      <ul>
+        <div class="footerTitulo">All rights reserved © 2021</div>
+        <div class="redesSociales">
+          <li>
+            <a
+              href="https://www.instagram.com/realmadrid/?hl=es-la"
+              target="_blanck"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/RealMadrid/" target="_blanck"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/realmadrid" target="_blanck"
+              >Twitter</a
+            >
+          </li>
         </div>
-    </nav>
+      </ul>
+    </div>
 
     <!--JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

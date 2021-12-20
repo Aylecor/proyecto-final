@@ -1,102 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title>Contacto</title>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=devide-width, initial-scale=1">
-    <!--Bootstrap CSS-->  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Bootstrap Icons-->  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1" />
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+  </head>
 
-<body>
+  <body>
     <!--menú de navegación-->
     <div class="container-fluid bg-dark">
-        <div class="container-xl">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/logo.png" alt="Logo del Real Madrid" width="30" height="24">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="historia.html">Historia</a>
-                    <a class="nav-link" href="estadio.html">Estadio Bernabéu</a>
-                    <a class="nav-link" href="equipo.html">Equipo de Fútbol</a>
-                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                  </div>
-                </div>
+      <div class="container-xl">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="../assets/logo.png"
+                alt="Logo del Real Madrid"
+                width="30"
+                height="24"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" href="historia.html">Historia</a>
+                <a class="nav-link" href="estadio.html">Estadio Bernabéu</a>
+                <a class="nav-link" href="equipo.html">Equipo de Fútbol</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contacto.html"
+                  >Contacto</a
+                >
               </div>
-            </nav>
-        </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
 
     <!--título de contacto-->
-    <div class="card">
-        <div class="card-body">
-            Ubicación del Estadio Bernabéu en la actualidad
-        </div>
-    </div>
-
-    <!--mapa-->
-    <div class="ratio ratio-16x9">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6072.085660225597!2d-3.690659!3d40.452189000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bdf12a106fcb23e!2sSantiago%20Bernab%C3%A9u!5e0!3m2!1ses!2sar!4v1638989120558!5m2!1ses!2sar" title="Mapa" allowfullscreen></iframe>
-    </div>
-    
-    <!--título de contacto-->
-    <div class="card">
-        <div class="card-body">
-            Contacto
-        </div>
+    <div class="areas">
+      <div class="areaUno borderRadio">Medio de comunicación</div>
     </div>
 
     <!--formulario en el contacto-->
-    <div class="container-fluid p-2">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input type="Nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-            <input type="Apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido" required>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Escriba su mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <input class="formluarioInput" type="submit" name="enviar" value="Enviar">
-        </div>
+    <div class="container">
+      <form class="formulario" action="" method="GET">
+        <input
+          class="formluarioInput"
+          type="text"
+          name="nombre"
+          placeholder="Nombre"
+          required
+        />
+        <input
+          class="formluarioInput"
+          type="text"
+          name="apellido"
+          placeholder="Apellido"
+          required
+        />
+        <input
+          class="formluarioInput"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="formluarioInput"
+          name="mensaje"
+          placeholder="Escribir un mensaje"
+          required
+        ></textarea>
+        <input
+          class="formluarioInput"
+          type="submit"
+          name="enviar"
+          value="Enviar"
+        />
+      </form>
     </div>
-        
+
+    <!--título de contacto-->
+    <div class="areas">
+      <div class="areaUno borderRadio">
+        Ubicación del estadio en la actualidad
+      </div>
+    </div>
+
+    <!--mapa-->
+    <div class="mapaContacto">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12144.017705699527!2d-3.688334!3d40.453039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2sar!4v1639961121909!5m2!1ses!2sar"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
     <!--inicio de footer-->
-    <nav class="navbar navbar-light bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="https://www.instagram.com/realmadrid/?hl=es-la" target="_blanck">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a class="navbar-brand" href="https://www.facebook.com/RealMadrid/" target="_blanck">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a class="navbar-brand" href="https://twitter.com/realmadrid" target="_blanck">
-                <i class="bi bi-twitter"></i>
-            </a>
+    <div id="footer">
+      <ul>
+        <div class="footerTitulo">All rights reserved © 2021</div>
+        <div class="redesSociales">
+          <li>
+            <a
+              href="https://www.instagram.com/realmadrid/?hl=es-la"
+              target="_blanck"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/RealMadrid/" target="_blanck"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/realmadrid" target="_blanck"
+              >Twitter</a
+            >
+          </li>
         </div>
-    </nav>
+      </ul>
+    </div>
 
     <!--JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
