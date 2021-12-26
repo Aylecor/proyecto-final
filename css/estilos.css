@@ -1,5 +1,5 @@
 /*tipografía*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 /*reseteo*/
 * {
@@ -21,84 +21,23 @@
   color: rgb(133 132 132);
 }
 
-/*grids areas*/
-.areas {
-  font-family: "Roboto Slab", "serif";
-  display: grid;
-  grid-template-areas:
-    "uno uno"
-    "dos dos"
-    "tres tres"
-    "cuatro cuatro"
-    "cinco cinco";
-  min-height: 20vh;
-  grid-gap: 1rem;
+/*titulos*/
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.areas .borderRadio {
-  border-radius: 1.5rem;
-  min-height: 3rem;
-  text-align: center;
+.tituloPrincipal {
+  font-size: 1rem;
 }
 
-/*animación en area uno*/
-@keyframes anima {
-  0% {
-    background-position: 7% 0%;
+/*titulos media desktop*/
+@media all and (min-width: 1200px) {
+  .tituloPrincipal {
+    font-size: 3rem;
   }
-  50% {
-    background-position: 97% 100%;
-  }
-  100% {
-    background-position: 7% 0%;
-  }
-}
-
-/*gradiente en area uno*/
-.areaUno {
-  grid-area: uno;
-  animation: anima 45s linear infinite;
-  background: linear-gradient(
-    114.34deg,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.48) 26%,
-    rgba(0, 0, 0, 0.43) 34%,
-    rgba(0, 0, 0, 0.38) 41%,
-    rgba(0, 0, 0, 0.31) 52%,
-    rgba(0, 0, 0, 0.25) 62%,
-    rgba(0, 0, 0, 0.21) 68%,
-    rgba(0, 0, 0, 0.14) 79%,
-    rgba(0, 0, 0, 0.09) 87%,
-    rgba(0, 0, 0, 0.05) 93%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background-size: 1000%;
-}
-
-.areaDos {
-  grid-area: dos;
-}
-
-.areaTres {
-  grid-area: tres;
-}
-
-.areaCuatro {
-  grid-area: cuatro;
-}
-
-.areaCinco {
-  grid-area: cinco;
-}
-
-.areaUno,
-.areaDos,
-.areaTres,
-.areaCuatro,
-.areaCinco {
-  background-color: #efefef;
-  margin: 1rem;
-  padding: 2%;
 }
 
 /*noticias con cards en el inicio*/
@@ -130,6 +69,7 @@
 .container .card img {
   width: 330px;
   height: 220px;
+  max-width: 100%;
 }
 
 .container .card .title {
@@ -150,6 +90,7 @@
 
 /*imagenes y vídeo del estadio*/
 .imagen .img-estadio {
+  max-width: 100%;
   width: 600px;
 }
 
@@ -183,6 +124,11 @@
 .imagen:hover {
   background-color: #b5b5b5;
   transform: scale(1, 1);
+}
+
+.imagen .info {
+  text-align: center;
+  position: relative;
 }
 
 /*formulario*/
@@ -227,13 +173,14 @@
 }
 
 .redesSociales {
+  display: flex;
+  justify-content: center;
   list-style: none;
   text-align: center;
-  margin: 3%;
 }
 
 #footer .redesSociales li {
-  margin: 3%;
+  margin: 0.5rem 1rem 0rem;
 }
 
 #footer .redesSociales li a {
@@ -243,4 +190,12 @@
 
 .titulo {
   text-align: center;
+}
+
+/*footer media desktop*/
+@media all and (min-width: 1200px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
