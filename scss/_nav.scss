@@ -1,0 +1,13 @@
+@import "_variables";
+
+/*menú de navegación*/
+.navbar-light {
+  .navbar-nav {
+    .nav-link.active {
+      color: $colorLinkActivo;
+    }
+    .nav-link {
+      color: $colorLink;
+    }
+  }
+}

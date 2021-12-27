@@ -1,0 +1,25 @@
+{
+  "name": "segundaentregapro",
+  "version": "1.0.0",
+  "description": "Sitio web sobre el Real Madrid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aylecor/proyecto-final.git"
+  },
+  "author": "Cordisco Aylen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aylecor/proyecto-final/issues"
+  },
+  "homepage": "https://github.com/Aylecor/proyecto-final#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

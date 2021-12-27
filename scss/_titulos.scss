@@ -1,0 +1,13 @@
+/*titulos con media desktop*/
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    .tituloPrincipal {
+      font-size: 1rem;
+      @media all and (min-width: 1200px) {
+        font-size: 3rem;
+      }
+    }
+  }

@@ -1,0 +1,36 @@
+/*imagenes del estadio y jugadores*/
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+  .imagen {
+    padding: 5px 5px 35px 5px;
+    margin: 1rem;
+    &:hover {
+      background-color: #b5b5b5;
+      transform: scale(1, 1);
+    }
+    .img {
+      width: 200px;
+    }
+    .img-estadio {
+      max-width: 100%;
+      width: 600px;
+    }
+    .info {
+      text-align: center;
+      position: relative;
+    }
+  }
+}
+
+/*vídeo del estadio*/
+.videoEstadio {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin-bottom: 2%;
+}
