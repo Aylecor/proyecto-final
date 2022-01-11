@@ -6,9 +6,18 @@
     margin-top: 1rem;
     .tituloPrincipal {
       font-size: 1rem;
+      text-align: center;
       @media all and (min-width: 1200px) {
         font-size: 3rem;
       }
     }
+  }
+
+  /*titulo h2*/
+  h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
   }
 

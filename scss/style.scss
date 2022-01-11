@@ -17,10 +17,17 @@
   padding: 0;
 }
 
+/*margin de historia*/
+.margin-historia{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /*each del mapa fuentes*/
 @each $k, $v in $font-weights{
   .font-weight-#{$k}{
     font-weight: $v;
   }
 }
-  
+
+
