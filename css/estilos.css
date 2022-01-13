@@ -136,6 +136,37 @@ h2 {
   min-width: 100%;
   margin-bottom: 2%; }
 
+/*colores de nav*/
+/*backgrounds*/
+/*colores de footer*/
+/*background de footer*/
+/*mapa fuentes*/
+/*tabla de campeonatos en equipo*/
+.containerTabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem; }
+  .containerTabla .tablaCampeonato {
+    color: #ffffff;
+    height: 320px;
+    margin: auto;
+    max-width: 650px;
+    width: 100%; }
+  .containerTabla .tablaArriba {
+    color: #D5DDE5;
+    background-color: #000000;
+    font-size: 20px;
+    padding: 25px;
+    text-align: center; }
+  .containerTabla .tablaAbajo {
+    color: #000000;
+    border-top: 1px solid #9ca8fb;
+    border-bottom: 1px solid #9ca8fb;
+    font-size: 15px;
+    text-align: center; }
+
 /*formulario con focus*/
 .formulario {
   display: flex;
@@ -202,6 +233,9 @@ h2 {
 
 .parrafo-par-bg-color {
   background: #ff8a8a21; }
+
+.tabla-bg-color {
+  background: #b7d5f19e; }
 
 /*reseteo*/
 * {
