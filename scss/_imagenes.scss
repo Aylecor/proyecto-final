@@ -1,17 +1,17 @@
 /*imagen del logo*/
-.imagenLogo{
+.imagenLogo {
   width: 70px;
   height:45px;
 }
 
 /*carrusel*/
-.carousel-caption{
+.carousel-caption {
   color: hsl(58, 100%, 53%);
   text-shadow: 0px 0px 8px #f50019;
 }
 
 /*banner*/
-.banner{
+.banner {
   height: 100vh;
   background-image: url("../assets/banner/banner.png");
   background-position: center;
@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  .bannerTitulo{
+  .bannerTitulo {
     font-size: 1rem;
     color: rgb(218, 218, 245);
     text-shadow: 0px 0px 8px #000;
@@ -31,7 +31,7 @@
   }
 
 /*imagenes de historia*/
-.imagenes-flex{
+.imagenes-flex {
     display: flex;
     justify-content: center;
     align-items: center;

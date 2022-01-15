@@ -2,36 +2,32 @@
 #footer {
   font-family: "Roboto", "sans-serif";
   color: $colorFooter;
-  margin-bottom: 0%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $backgroundFooter;
-  @media all and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-  }
-  .footerTitulo {
-    padding-top: 3%;
-  }
-  .redesSociales {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-    li {
-      margin: 0.5rem 1rem 0rem;
-    }
-    a {
-      text-decoration: none;
-      color: $colorFooter;
-      &:hover{
-        color: $hoverFooter;
-      }
-    }
-    .titulo {
+  ul{
+    padding: 0rem;
+    padding-top: 2rem;
+    .redesSociales {
+      display: flex;
+      justify-content: center;
+      list-style: none;
       text-align: center;
+      li {
+        margin: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: $colorFooter;
+        &:hover{
+          color: $hoverFooter;
+        }
+      }
+      .titulo {
+        text-align: center;
+      }
     }
   }
 }

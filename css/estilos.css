@@ -190,32 +190,28 @@ h2 {
 #footer {
   font-family: "Roboto", "sans-serif";
   color: #b5b5b5;
-  margin-bottom: 0%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #000; }
-  @media all and (min-width: 1200px) {
-    #footer {
+  #footer ul {
+    padding: 0rem;
+    padding-top: 2rem; }
+    #footer ul .redesSociales {
       display: flex;
-      flex-direction: column; } }
-  #footer .footerTitulo {
-    padding-top: 3%; }
-  #footer .redesSociales {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    text-align: center; }
-    #footer .redesSociales li {
-      margin: 0.5rem 1rem 0rem; }
-    #footer .redesSociales a {
-      text-decoration: none;
-      color: #b5b5b5; }
-      #footer .redesSociales a:hover {
-        color: #0000ff; }
-    #footer .redesSociales .titulo {
+      justify-content: center;
+      list-style: none;
       text-align: center; }
+      #footer ul .redesSociales li {
+        margin: 1rem; }
+      #footer ul .redesSociales a {
+        text-decoration: none;
+        color: #b5b5b5; }
+        #footer ul .redesSociales a:hover {
+          color: #0000ff; }
+      #footer ul .redesSociales .titulo {
+        text-align: center; }
 
 /*colores de nav*/
 /*backgrounds*/
