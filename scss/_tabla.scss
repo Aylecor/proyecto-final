@@ -13,20 +13,21 @@
         margin: auto;
         max-width: 650px;
         width: 100%;
+        .tablaArriba{
+            color:#D5DDE5; 
+            background-color: #000000;
+            font-size: 20px;
+            padding: 25px;
+            text-align: center;
         }
-    .tablaArriba{
-        color:#D5DDE5; 
-        background-color: #000000;
-        font-size: 20px;
-        padding: 25px;
-        text-align: center;
+        .tablaAbajo{
+            color: #000000;
+            border-top: 1px solid #9ca8fb;
+            border-bottom: 1px solid #9ca8fb;
+            font-size: 15px;
+            text-align: center;    
         }
-    .tablaAbajo{
-        color: #000000;
-        border-top: 1px solid #9ca8fb;
-        border-bottom: 1px solid #9ca8fb;
-        font-size: 15px;
-        text-align: center;    
     }
+    
 }
   
