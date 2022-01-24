@@ -1,7 +1,8 @@
 /*tipografía*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
 
-@import url("../node_modules/bootstrap/scss/bootstrap.scss");
+@import "_variables";
+@import "_body";
 @import "_nav";
 @import "_titulos";
 @import "_noticias";
@@ -9,8 +10,6 @@
 @import "_tabla";
 @import "_formulario";
 @import "_footer";
-@import "_variables";
-@import "_body";
 
 /*reseteo*/
 * {

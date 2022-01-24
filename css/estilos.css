@@ -1,13 +1,25 @@
 @charset "UTF-8";
 /*tipografía*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url("../node_modules/bootstrap/scss/bootstrap.scss");
 /*colores de nav*/
 /*backgrounds*/
 /*colores de footer*/
 /*background de footer*/
 /*mapa fuentes*/
-/*menú de navegación*/
+/*background*/
+.body-bg-color {
+  background: #00529f30; }
+
+.parrafo-inpar-bg-color {
+  background: #d5fb3a29; }
+
+.parrafo-par-bg-color {
+  background: #ff8a8a21; }
+
+.tabla-bg-color {
+  background: #b7d5f19e; }
+
+/*colores en el menú de navegación*/
 .navbar-light .navbar-nav .nav-link.active {
   color: #858484; }
 
@@ -80,22 +92,73 @@ h2 {
   color: #fff70f;
   text-shadow: 0px 0px 8px #f50019; }
 
-/*banner*/
-.banner {
+/*banner de las dsitintas secciones*/
+.bannerHistoria {
   height: 100vh;
-  background-image: url("../assets/banner/banner.png");
+  background-image: url("../assets/banner/bannerHistoria.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end; }
-  .banner .bannerTitulo {
+  .bannerHistoria .bannerTitulo {
     font-size: 1rem;
     color: #dadaf5;
     text-shadow: 0px 0px 8px #000; }
     @media all and (min-width: 1200px) {
-      .banner .bannerTitulo {
+      .bannerHistoria .bannerTitulo {
+        font-size: 2rem; } }
+
+.bannerEstadio {
+  height: 100vh;
+  background-image: url("../assets/banner/bannerEstadio.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; }
+  .bannerEstadio .bannerTitulo {
+    font-size: 1rem;
+    color: #dadaf5;
+    text-shadow: 0px 0px 8px #000; }
+    @media all and (min-width: 1200px) {
+      .bannerEstadio .bannerTitulo {
+        font-size: 2rem; } }
+
+.bannerEquipo {
+  height: 100vh;
+  background-image: url("../assets/banner/bannerEquipo.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; }
+  .bannerEquipo .bannerTitulo {
+    font-size: 1rem;
+    color: #dadaf5;
+    text-shadow: 0px 0px 8px #000; }
+    @media all and (min-width: 1200px) {
+      .bannerEquipo .bannerTitulo {
+        font-size: 2rem; } }
+
+.bannerContacto {
+  height: 100vh;
+  background-image: url("../assets/banner/bannerContacto.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; }
+  .bannerContacto .bannerTitulo {
+    font-size: 1rem;
+    color: #dadaf5;
+    text-shadow: 0px 0px 8px #000; }
+    @media all and (min-width: 1200px) {
+      .bannerContacto .bannerTitulo {
         font-size: 2rem; } }
 
 /*imagenes de historia*/
@@ -136,11 +199,6 @@ h2 {
   min-width: 100%;
   margin-bottom: 2%; }
 
-/*colores de nav*/
-/*backgrounds*/
-/*colores de footer*/
-/*background de footer*/
-/*mapa fuentes*/
 /*tabla de campeonatos en equipo*/
 .containerTabla {
   display: flex;
@@ -167,26 +225,52 @@ h2 {
       font-size: 15px;
       text-align: center; }
 
-/*formulario con focus*/
-.formulario {
+/*container de contacto*/
+.containerContacto {
   display: flex;
-  flex-direction: column; }
-  .formulario .formluarioInput {
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 1rem; }
-    .formulario .formluarioInput:focus {
-      color: #fff;
-      background-color: #000;
-      font-family: "Roboto", "sans-serif"; }
-
-/*mapa del contacto*/
-.mapaContacto {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 1rem; }
+  align-items: center;
+  /*formulario con focus*/
+  /*mapa del contacto*/ }
+  @media all and (min-width: 1200px) {
+    .containerContacto {
+      flex-direction: row; } }
+  .containerContacto .formulario {
+    display: flex;
+    flex-direction: column; }
+    @media all and (min-width: 1200px) {
+      .containerContacto .formulario {
+        margin: 2rem; } }
+    .containerContacto .formulario .formluarioInput {
+      border-radius: 0.5rem;
+      padding: 0.3rem;
+      margin: 0.3rem; }
+      @media all and (min-width: 1200px) {
+        .containerContacto .formulario .formluarioInput {
+          padding-right: 3rem; } }
+      .containerContacto .formulario .formluarioInput:focus {
+        color: #fff;
+        background-color: #000;
+        font-family: "Roboto", "sans-serif"; }
+  .containerContacto .mapaContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; }
+    @media all and (min-width: 1200px) {
+      .containerContacto .mapaContacto {
+        margin: 2rem; } }
+    .containerContacto .mapaContacto iframe {
+      width: 350px;
+      height: 150px; }
+      @media all and (min-width: 1200px) {
+        .containerContacto .mapaContacto iframe {
+          width: 700px;
+          height: 400px; } }
 
-/*inicio de footer con media desktop*/
+/*footer con media desktop*/
 #footer {
   font-family: "Roboto", "sans-serif";
   color: #b5b5b5;
@@ -212,28 +296,6 @@ h2 {
           color: #0000ff; }
       #footer ul .redesSociales .titulo {
         text-align: center; }
-
-/*colores de nav*/
-/*backgrounds*/
-/*colores de footer*/
-/*background de footer*/
-/*mapa fuentes*/
-/*colores de nav*/
-/*backgrounds*/
-/*colores de footer*/
-/*background de footer*/
-/*mapa fuentes*/
-.body-bg-color {
-  background: #00529f30; }
-
-.parrafo-inpar-bg-color {
-  background: #d5fb3a29; }
-
-.parrafo-par-bg-color {
-  background: #ff8a8a21; }
-
-.tabla-bg-color {
-  background: #b7d5f19e; }
 
 /*reseteo*/
 * {

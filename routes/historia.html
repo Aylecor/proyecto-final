@@ -21,10 +21,10 @@
     <!--menú de navegación-->
     <div class="container-fluid bg-dark">
       <div class="container-xl">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-              <img src="../assets/logo/logo.png" alt="Logo del Real Madrid" class="imagenLogo"/>
+              <img class="imagenLogo" src="../assets/logo/logo.png" alt="Logo del Real Madrid"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
     </div>
 
     <!--banner de historia-->
-    <div class="banner">
+    <div class="bannerHistoria">
       <div class="bannerTitulo font-weight-bold">NUESTRA HISTORIA</div>
     </div>
 
@@ -54,7 +54,7 @@
     </div>
 
     <!--información de historia-->
-    <div class="container p-2">
+    <div class="container">
       <div class="row">
         <div class="col-md-8 font-weight-bold parrafo-inpar-bg-color margin-historia">
           <div class="p-1 m-1">Desde 1902 al 1910</div>
@@ -453,8 +453,8 @@
             cinco.
           </p>
         </div>
-        <div class="col-md-4 imagenes-flex">
-          <div class="historiaDeEquipo wow animate__animated animate__fadeInRight">
+        <div class="col-md-4 imagenes-flex wow animate__animated animate__fadeInRight">
+          <div class="historiaDeEquipo">
             <img src="../assets/historia/equipoHistoriaDoce.jpg" class="img-fluid" alt="Equipo de fútbol doce"/>
             <h2>"Celebración de la Champions 2018 en Kiev"</h2>
           </div>
@@ -487,7 +487,7 @@
     <!--animate script-->
     <script src="../js/wow.js"></script>
     <script>
-    new WOW().init();
+      new WOW().init();
     </script>
   </body>
 </html>
